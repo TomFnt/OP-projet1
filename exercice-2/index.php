@@ -15,7 +15,7 @@
         <div id="liste-oeuvres">
             <?php foreach ($oeuvres as $oeuvre) {?>
             <article class="oeuvre">
-                <a href="oeuvre-<?=$oeuvre['id']?>.html">
+                <a href="oeuvre.php?id=<?=$oeuvre['id']?>">
                     <img src="<?=$oeuvre['image_url']?>" alt="<?=$oeuvre['title']?>">
                     <h2><?=$oeuvre['title']?></h2>
                     <p class="description"><?= $oeuvre['artist']?></p>
